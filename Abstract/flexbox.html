@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox</title>
+        <link rel="stylesheet" href="Css/cssfoxFB.css">
+    </head>
+        <body>
+            <p><i><b><big>Welcome to FlexBox!</big></b></i></p>
+<hr>
+            <style>
+                *{
+                    padding: 0;
+                    margin: 0;
+                }
+                @media (min-width: 500px) { /*Свойства контейнер-1 и -2 будут работать только до сужения страницы до 500px*/
+            .container-1 {
+               display: flex; /*Дисплей Флекс - расположение блоков в ряд*/
+               /* align-items: flex-start; Определяет высоту блока(к верхней границе блока)*/
+               /* align-items: flex-end; Определяет высоту блока(к нижней границе блока)*/
+               /* align-items: center; Определяет высоту блока(по центру блока)*/
+               align-items: stretch; /* Определяет высоту блока(дефолтное расположение)*/
+
+               /*flex-direction: column; ФлексДиректион Колумн - Расположение блоков в столбец*/
+               /*flex-direction: column-reverse; ФлексДиректион КолумнРеверс - Расположение блоков в столбец в обратном порядке*/
+               flex-direction: row; /*Роу - Расположение блоков в ряд*/
+               /*flex-direction: row-reverse; РоуРеверсе - Расположение блоков в ряд в обратном порядке*/
+            }
+        }
+        
+            .container-2 {
+                display: flex;
+            }
+        
+            .container-2 {
+                /*justify-content: flex-start; Расположение блоков(старт - слева, центр - по центру, енд - справа*/
+                justify-content: space-around; /*Расположение блоков по центру с одинаковым количеством отступов*/
+                /*justify-content: space-between; Расположение блоков на всю ширину с одинаковым количеством отступов*/
+                flex-wrap: wrap; /*При сужении блоки будут переноситься на новый ряд*/
+                /*flex-wrap: wrap-reverse; При сужении блоки будут переноситься на новый ряд в обратном порядке*/
+                /*flex-wrap: nowrap; При сужении блоки НЕ будут переноситься на новый ряд*/
+        }
+            .container-1 div, .container-2 div {
+                padding: 10px;
+                border: 1px solid silver;
+            }
+
+            .box-1 {
+                flex: 2; /*Приоритер размера блока*/
+                order: 2; /*Очередь в расположении*/
+            }
+            .box-2 {
+                flex: 2;
+                order: 1;
+            }
+            .box-3 {
+                flex: 1;
+                order: 3;
+            }
+            .box {
+                flex-basis: 20%; /*Тоже самое что и width: 20%*/
+            }
+
+            </style>
+                <div class="container-1">
+                    <div class="box-1">
+                        <h3>Box 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box-2">
+                        <h3>Box 2</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box-3">
+                        <h3>Box 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                </div>
+                <br><hr><br>
+
+                <div class="container-2">
+                    <div class="box">
+                        <h3>Box 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box">
+                        <h3>Box 2</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box">
+                        <h3>Box 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box">
+                        <h3>Box 4</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box">
+                        <h3>Box 5</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                    <div class="box">
+                        <h3>Box 6</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, autem nam sed error, minima, odit quae maxime hic perferendis sint cupiditate! Odio sapiente temporibus culpa necessitatibus corporis, repudiandae excepturi iste?</p>
+                    </div>
+                </div>
+        </body>
+</html>

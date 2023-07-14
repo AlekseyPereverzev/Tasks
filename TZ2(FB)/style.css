@@ -1,0 +1,32 @@
+.sample1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sample2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sample3 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;    
+}
+
+.sample4 {
+    display: flex;
+}
+.sample4 div {
+    flex-basis: 33%;
+}
+
+.sample5{
+    display: flex;
+    justify-content: end;
+}
+.sample5 .box2 {
+    margin-right: 600px;    
+}

@@ -1,0 +1,205 @@
+.red {
+    color:red;
+}
+.blue {
+    color:blue;
+}
+#green {
+    color: green;
+}
+
+div p b { /*через запятую можно выбирать несколько селекторов*/
+    color:orange;
+
+}
+
+
+/*______________________________________*/
+
+
+.clrwww {
+    color:blue;
+    text-decoration: none; /*местоположение подчеривания*/
+}
+.clrwww:hover { /*изменения при наведении мыши, п.с. тут че то не работает*/
+    color:red;
+    text-decoration: underline;
+    cursor: pointer; /*Курсор*/
+}
+.clrwww:active { /*Действие при нажатии*/
+    text-decoration: line-through; /*При нажатии зачеркивается*/
+}
+/*.clrwww:visited { Вид ссылки после посещения
+    color: grey;
+}*/
+.input-in-CSS {color: gray;} /*цвет после введения текста*/
+.input-in-CSS:focus {color: violet;} /*цвет во время введения текста*/
+
+/*Еще некоторые псевдоклассы:*/
+/*disable - не активные, enable - активные, required - обязательное для заполнения,*/
+/*empty - пустые, not(:empty) - не пустые*/
+/*first-of-type - обращение к первому подходящему элементу*/
+/*last-of-type - обращение к первому подходящему элементу*/
+
+#some_id::after { /*Псевдоэлементы (before - перед объектом)*/
+    content: ' Некоторый невыделяемый текст';
+    color: chartreuse;
+}
+/*Еще некоторые псевдоэлементы:*/
+/*first-letten - обращение к первому символу*/
+/*first-line - первая строка*/
+
+/*______________________________________*/
+
+body {
+    background-color:darkgray; /*Цвет фона страницы*/
+    /* background-image: url(''); <<< Пикча на фоне, урл или путь из папки*/
+    /* background-repeat: no-repeat; <<< Свойство, чтобы картинка не повтрялась*/
+    /* background-position: center; <<<  Позиция пикчи*/
+    /* background-size: auto; <<< Размер пикчи, на всю страницу */
+    /* background-attachment: fixed; <<< Фиксирует пикчу на месте */
+}
+
+/*______________________________________*/
+
+.TextTextText {
+    color: brown;
+    text-align: center;
+    font-size: 25px; /*Вместо px можно использовать em, это односительная величина (1em - 14px, стандартный текст)*/
+    font-style: italic; /*Стиль (наклон и тд)*/
+    font-weight: bold; /*жирность*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*шрифт*/
+    text-transform: lowercase; /*в каком регистре будут символы*/
+    word-spacing: 20px; /*расстояние между словами*/
+    letter-spacing: 5px; /*расстояние между символами*/
+    line-height: 50px; /*расстояние между строками*/
+}
+
+/*______________________________________*/
+
+#block {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    border: 5px solid black; /*solid - сплошная обводка, dashed - пунктир, dotted - кружками*/
+    /*можно выбирать сторону обводки border-top и тд*/
+    /*border-style - стиль обводки*/
+    border-radius: 15px 50%; /*скругление углов*/
+    opacity: 50%; /*прозрачность*/
+    margin: 50px; /*внешние отступы*/
+    /*margin-top - добавить отступ к верхней стороне и тд*/
+    padding: 10px; /*внутренний отступ(тут для симпл)*/
+}
+
+* { /*обращение ко всем тегам проекта*/
+    margin: 0; /*удаление дефолтных отступов на странице*/
+    padding: 0;
+}
+
+/*______________________________________*/
+
+.about1 {
+    text-align: center;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    margin: 20 px;
+    background: green;
+}
+
+#first {
+    float: right;
+}
+
+#second {
+    float: left;
+    background: blue;
+
+}
+
+#header1, #footer1 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+#main1 {
+    width: 50%;
+    margin-left: 10%;
+    background: #fafafa;
+    border: 1px solid black;
+    padding: 20px 2.5%;
+    float: left;
+    z-index: 1; /*установление порядка слоя*/
+    position: relative; /*обязательный параметр при определении слоя*/
+}
+
+#aside1 {
+    width: 20%;
+    background: #fafafa;
+    border: 1px solid black;
+    padding: 20px 2.5%;
+    float: left;
+    margin-left: 5%;
+    position: relative; /*смещение блока*/
+    bottom: -10px;  /*смещение вниз*/
+    left: -200px; /*смещение влево*/
+    z-index: 0;
+    position: relative;
+}
+
+#footer1 {
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0;
+    border-top: 2px solid black;
+}
+
+#someblock1 {
+    background: red;
+    color: white;
+    text-align: center; /*позиция текста в объекте*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed; /*фиксирует позицию объекта на экране*/
+    
+}
+
+/*______________________________________*/
+
+#nav {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 50px
+}
+
+#nav li:hover {
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    border-color: #333;
+}
+
+#nav li {
+    display: inline;
+    background: #fafafa;
+    border: 1px solid black;
+    padding: 0 20px;
+    cursor: pointer;}
+
+#nav li:not(:last-of-type) {
+    margin-right: 20px;
+}

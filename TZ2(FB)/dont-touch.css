@@ -1,0 +1,55 @@
+body {
+    padding: 80px;
+    background: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sample1,
+.sample2,
+.sample3,
+.sample4,
+.sample5 {
+    padding: 40px;
+    margin-bottom: 80px;
+    border-radius: 12px;
+    background: white;
+}
+
+.box1,
+.box2,
+.box3 {
+    border-radius: 6px;
+    text-align: center;
+    background: #083b53;
+    color: white;
+}
+
+.sample1 .box1,
+.sample2 .box1,
+.sample3 .box1,
+.sample4 .box1,
+.sample5 .box1 {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.sample1 .box2,
+.sample2 .box2,
+.sample3 .box2,
+.sample4 .box2,
+.sample5 .box2 {
+    width: 100px;
+    height: 300px;
+    line-height: 300px;
+}
+
+.sample1 .box3,
+.sample2 .box3,
+.sample3 .box3,
+.sample4 .box3,
+.sample5 .box3 {
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+}
